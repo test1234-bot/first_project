@@ -1,0 +1,11 @@
+import requests
+r = requests.get('http://httpbin.org/get')
+print(r.status_code)
+print(r.json())
+print(type(r.json()))
+print('============')
+r=requests.get('https://api.github.com/events')
+print(r.text)
+print(r.encoding)
+print(r.content)
+print(r.json())
